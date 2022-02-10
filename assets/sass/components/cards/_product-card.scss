@@ -1,0 +1,29 @@
+.product-card {
+  .product-url {
+    display: block;
+  }
+  .product-image {
+    height: 380px;
+    margin-bottom: 15px;
+    position: relative;
+    .product-label {
+      background-color: #fff;
+      color: $textColor;
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      padding: 5px 15px;
+      position: absolute;
+      left: 8px;
+      top: 8px;
+    }
+  }
+  .product-title {
+    font-family: 'Outfit';
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .product-price {
+    color: $gray;
+  }
+}
