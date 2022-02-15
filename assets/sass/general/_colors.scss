@@ -1,6 +1,3 @@
-/*------------------------------------------------------------------------------
-    Colors
-------------------------------------------------------------------------------*/
 .text-main {
   color: $mainColor !important;
 }
@@ -11,4 +8,8 @@
 
 .text-light-gray {
   color: $lightGray !important;
+}
+
+.bg-light-coffee {
+  background-color: $lightCoffee !important;
 }

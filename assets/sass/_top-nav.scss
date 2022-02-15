@@ -15,7 +15,7 @@
   }
   &.active {
     background-color: #fff;
-    box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
     padding: 30px 45px;
     .navbar-brand {
       path {
@@ -162,7 +162,8 @@
             display: block;
             .nav-link {
               padding: 30px 15px;
-              svg, img {
+              svg,
+              img {
                 display: block;
                 margin: 0 auto;
               }
@@ -180,7 +181,8 @@
       right: 15px;
       top: 50%;
       @include transform(translate(0, -50%));
-      svg, img {
+      svg,
+      img {
         max-width: 100px !important;
       }
     }
