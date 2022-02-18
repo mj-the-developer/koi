@@ -9,6 +9,7 @@
 }
 
 .btn-dark, .btn-light {
+  border: 1px solid $textColor;
   font-size: 18px;
   padding: 15px 50px;
 }
