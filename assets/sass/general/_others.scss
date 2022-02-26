@@ -46,6 +46,20 @@
   }
 }
 
+.slogans {
+  position: relative;
+  &::after {
+    background-color: $textColor;
+    content: '';
+    height: 60%;
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    width: 2px;
+    @include transform(translate(50%, -50%))
+  }
+}
+
 @media screen and (max-width: 768px) {
   .section-padding,
   .section-padding-lg {
@@ -56,5 +70,10 @@
   }
   .section-subtitle {
     width: 100%;
+  }
+  .slogans {
+    &::after {
+      display: none;
+    }
   }
 }

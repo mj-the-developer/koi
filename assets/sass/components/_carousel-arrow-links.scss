@@ -1,0 +1,26 @@
+.carousel {
+  .carousel-control-next, .carousel-control-prev {
+    bottom: initial;
+    font-size: 64px;
+    opacity: 1;
+    top: 32%;
+    @include circle(35px);
+    &:hover {
+      color: $mainColor;
+    }
+  }
+  .carousel-control-next {
+    right: 15px;
+  }
+  .carousel-control-prev {
+    left: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .carousel {
+    .carousel-control-next, .carousel-control-prev {
+      display: none;
+    }
+  }
+}

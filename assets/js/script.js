@@ -1,21 +1,21 @@
 $(document).ready(function () {
-  // Smaller top navigation on scroll
-  $(window).scroll(function () {
+  // variables
+  const animations = ['slide-left', 'slide-right', 'fade-in', 'slide-bottom', 'slide-bottom-2', 'slide-bottom-3'];
+
+  // functions
+  function toggleNavbarStyleOnScroll() {
     var winTop = $(window).scrollTop();
     if (winTop > 100) {
-      $('.navbar-wrapper').addClass("active");
+      $('.navbar-wrapper').addClass('active');
     } else {
-      $('.navbar-wrapper').removeClass("active");
+      $('.navbar-wrapper').removeClass('active');
     }
-  });
-  var winTop = $(window).scrollTop();
-  if (winTop > 100) {
-    $('.navbar-wrapper').addClass("active");
-  } else {
-    $('.navbar-wrapper').removeClass("active");
   }
 
-  // Navbar Toggle on Mobile
+  // smaller top navigation on refresh
+  toggleNavbarStyleOnScroll();
+
+  // navbar Toggle on Mobile
   $('.navbar-toggler').click(function () {
     $('#collapsibleNavbar').addClass('active');
     $('#overlay-modal').addClass('active');
@@ -25,59 +25,16 @@ $(document).ready(function () {
     $(this).removeClass('active');
   });
 
-  // Animations on Scroll
+  // window scroll listener
   $(window).scroll(function () {
-    $(".leftslideanim").each(function () {
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 500) {
-        $(this).addClass("mj-leftslide");
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $(".rightslideanim").each(function () {
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 500) {
-        $(this).addClass("mj-rightslide");
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $(".opacanim").each(function () {
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 500) {
-        $(this).addClass("mj-opac");
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $(".slide-bottom-animation").each(function () {
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 500) {
-        $(this).addClass("slide-bottom");
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $(".slide-bottom-animation-2").each(function () {
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 500) {
-        $(this).addClass("slide-bottom-2");
-      }
-    });
-  });
-  $(window).scroll(function () {
-    $(".slide-bottom-animation-3").each(function () {
-      var pos = $(this).offset().top;
-      var winTop = $(window).scrollTop();
-      if (pos < winTop + 500) {
-        $(this).addClass("slide-bottom-3");
-      }
+    toggleNavbarStyleOnScroll();
+
+    animations.forEach(animation => {
+      $(`.${animation}-animation`).each(function () {
+        var pos = $(this).offset().top;
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 500) $(this).addClass(animation);
+      });
     });
   });
 });

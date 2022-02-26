@@ -1,3 +1,28 @@
 .font-outfit {
   font-family: 'Outfit' !important;
 }
+
+.font-size-18 {
+  font-size: 18px !important;
+  line-height: 27px !important;
+}
+
+.font-size-24 {
+  font-size: 24px !important;
+  line-height: 36px !important;
+}
+
+.font-weight-500 {
+  font-weight: 500 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .font-size-24 {
+    font-size: 19px;
+    line-height: 30px;
+  }
+  .font-size-18 {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

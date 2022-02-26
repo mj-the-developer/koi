@@ -1,0 +1,23 @@
+.featured-collection-card {
+  text-align: center;
+  .featured-collection-image {
+    height: 720px;
+    margin-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .featured-collection-card {
+    .featured-collection-image {
+      height: 540px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .featured-collection-card {
+    .featured-collection-image {
+      height: 360px;
+    }
+  }
+}

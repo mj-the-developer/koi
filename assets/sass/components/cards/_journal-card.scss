@@ -1,0 +1,14 @@
+.journal-card {
+  .journal-image {
+    height: 470px;
+    margin-bottom: 25px;
+  }
+  .journal-info {
+    .journal-title {
+      line-height: 40px;
+    }
+    .journal-date, .comment-count {
+      color: $gray;
+    }
+  }
+}
