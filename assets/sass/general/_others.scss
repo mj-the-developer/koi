@@ -19,13 +19,20 @@
   text-transform: uppercase;
 }
 
+button.plain {
+  background-color: transparent;
+  border: none;
+}
+
 .qty-input-wrapper {
   display: inline-block;
   height: 35px;
   position: relative;
   text-align: center;
   width: 70px;
-  input {
+  .form-control {
+    border-color: $textColor;
+    border-radius: 4px;
     height: 100%;
     padding: 0 !important;
     text-align: center;

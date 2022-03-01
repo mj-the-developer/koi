@@ -22,12 +22,30 @@
       }
     }
   }
+  .product-images {
+    display: flex;
+    .small-images {
+      min-width: 120px;
+      padding-right: 3px;
+      width: 120px;
+      .small-image {
+        cursor: pointer;
+        height: 120px;
+        margin-bottom: 3px;
+      }
+    }
+    .main-image {
+      height: 475px;
+      width: 100%;
+    }
+  }
   .product-info {
     .product-price {
       font-size: 24px;
     }
     .variant-label {
       border: 1px solid #d0d0d0;
+      border-radius: 4px;
       cursor: pointer;
       display: inline-block;
       font-size: 18px;
@@ -47,7 +65,8 @@
       margin-bottom: 0 !important;
     }
     .action-buttons {
-      .btn-dark, .btn-light {
+      .btn-dark,
+      .btn-light {
         display: block;
         margin-bottom: 6px;
         padding: 10px 15px !important;
@@ -62,6 +81,34 @@
   }
 }
 
+@media screen and (max-width: 992px) {
+  .featured-product {
+    .product-images {
+      .small-images {
+        min-width: 70px;
+        width: 70px;
+        .small-image {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .featured-product {
+    .product-images {
+      .small-images {
+        min-width: 120px;
+        width: 120px;
+        .small-image {
+          height: 120px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 576px) {
   .featured-product {
     .product-slideshow {
@@ -72,6 +119,36 @@
               height: 450px;
             }
           }
+        }
+      }
+    }
+    .product-images {
+      .small-images {
+        min-width: 70px;
+        width: 70px;
+        .small-image {
+          height: 70px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .featured-product {
+    .product-images {
+      flex-direction: column-reverse;
+      .small-images {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 3px;
+        padding-right: 0;
+        min-width: initial;
+        width: initial;
+        .small-image {
+          margin-right: 3px;
+          min-width: 70px;
+          width: 70px;
         }
       }
     }

@@ -15,14 +15,29 @@ $(document).ready(function () {
   // smaller top navigation on refresh
   toggleNavbarStyleOnScroll();
 
-  // navbar Toggle on Mobile
+  // navbar Toggle on mobile
   $('.navbar-toggler').click(function () {
     $('#collapsibleNavbar').addClass('active');
     $('#overlay-modal').addClass('active');
   });
+
+  // navbar and cart sidebar close
   $('#overlay-modal').click(function () {
     $('#collapsibleNavbar').removeClass('active');
+    $('.cart-sidebar').removeClass('active');
     $(this).removeClass('active');
+  });
+
+  // cart sidebar close
+  $('#close-cart-sidebar').click(function () {
+    $('.cart-sidebar').removeClass('active');
+    $('#overlay-modal').removeClass('active');
+  });
+
+  // cart sidebar open
+  $('.open-cart-sidebar').click(function () {
+    $('.cart-sidebar').addClass('active');
+    $('#overlay-modal').addClass('active');
   });
 
   // window scroll listener

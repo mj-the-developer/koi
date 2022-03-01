@@ -1,0 +1,54 @@
+.review-cards-wrapper {
+  border-top: 1px solid $textColor;
+}
+
+.review-card {
+  border-bottom: 1px solid $textColor;
+  padding: 35px 0;
+  position: relative;
+  .review-avatar {
+    align-items: center;
+    color: #fff;
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 36px;
+    justify-content: center;
+    min-width: 60px;
+    @include circle(60px);
+  }
+  .review-info {
+    .author-name, .review-title {
+      font-size: 18px !important;
+      font-weight: 500;
+    }
+    .review-title {
+      text-transform: uppercase;
+    }
+  }
+  .review-date {
+    color: $lightGray;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+  }
+  .review-feedback {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    p, span {
+      font-size: 14px;
+    }
+    .like, .dislike {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+}

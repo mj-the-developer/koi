@@ -10,6 +10,7 @@
 
 .btn-dark, .btn-light {
   border: 1px solid $textColor;
+  border-radius: 4px;
   font-size: 18px;
   padding: 15px 50px;
   &.btn-thin {

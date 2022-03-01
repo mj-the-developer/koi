@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en_US" dir="ltr">
 
 <head>
   <title>KOI</title>
@@ -36,9 +36,9 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid pt-0">
     <!-- Top Navigation -->
-    <div class="navbar-wrapper">
+    <div class="navbar-wrapper transparent-navbar">
       <nav class="navbar navbar-expand-md">
         <!-- Navbar Toggler -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -111,10 +111,103 @@
               <a class="nav-link" href="account.html">Account</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="cart.html">Cart</a>
+              <a class="nav-link open-cart-sidebar" href="javascript:void(0)">Cart(0)</a>
             </li>
           </ul>
         </div>
+        <!-- Cart Sidebar -->
+        <div class="cart-sidebar">
+          <div class="cart-sidebar-header pb-3 border-bottom">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <h4>CART</h4>
+              </div>
+              <div class="col-6 text-right">
+                <button class="plain" id="close-cart-sidebar">
+                  <img src="assets/icons/close.svg" alt="Close Icon">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="cart-sidebar-items">
+            <!-- Cart Item -->
+            <div class="cart-sidebar-item">
+              <div class="d-flex">
+                <div class="item-image"
+                  style="background: url('assets/images/shirt-cream-01.jpg') no-repeat center;background-size:cover;">
+                </div>
+                <div class="item-info">
+                  <p class="item-title mb-2">Boxy T-Shirt Cream</p>
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div class="item-variant">
+                      <strong>Size:</strong> Small
+                    </div>
+                    <div class="item-price">
+                      <strong>&dollar;70.00</strong>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="item-qty">
+                      <div class="qty-input-wrapper">
+                        <input type="text" class="form-control" value="1">
+                        <span class="increase">&plus;</span>
+                        <span class="decrease">&minus;</span>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <button class="plain remove-item p-0">Remove</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Cart Item -->
+            <!-- Cart Item -->
+            <div class="cart-sidebar-item">
+              <div class="d-flex">
+                <div class="item-image"
+                  style="background: url('assets/images/shirt-cream-01.jpg') no-repeat center;background-size:cover;">
+                </div>
+                <div class="item-info">
+                  <p class="item-title mb-2">Boxy T-Shirt Cream</p>
+                  <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div class="item-variant">
+                      <strong>Size:</strong> Small
+                    </div>
+                    <div class="item-price">
+                      <strong>&dollar;70.00</strong>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <div class="item-qty">
+                      <div class="qty-input-wrapper">
+                        <input type="text" class="form-control" value="1">
+                        <span class="increase">&plus;</span>
+                        <span class="decrease">&minus;</span>
+                      </div>
+                    </div>
+                    <div class="item-price">
+                      <button class="plain remove-item p-0">Remove</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- /Cart Item -->
+          </div>
+          <div class="cart-sidebar-footer pt-3 border-top">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <div>SUBTOTAL</div>
+              <strong>&dollar;70.00</strong>
+            </div>
+            <span class="d-block mb-3">Shipping & taxes will be calculated at checkout</span>
+            <div class="action-buttons">
+              <button class="btn-dark btn-thin w-100 mb-2">Check Out</button>
+              <button class="btn-light btn-thin w-100">View Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- /Cart Sidebar -->
         <div id="overlay-modal"></div>
       </nav>
     </div>
@@ -313,7 +406,7 @@
                 <h6 class="product-title">Red Dors</h6>
               </a>
               <p class="product-price">&dollar;70.25</p>
-              <button class="quick-shop-button">Quick Shop</button>
+              <button class="quick-shop-button sold-out" disabled>Quick Shop</button>
             </div>
           </div>
           <!-- /Product Card -->
@@ -607,7 +700,7 @@
                         <h6 class="product-title">Red Dors</h6>
                       </a>
                       <p class="product-price">&dollar;70.25</p>
-                      <button class="quick-shop-button">Quick Shop</button>
+                      <button class="quick-shop-button sold-out" disabled>Quick Shop</button>
                     </div>
                   </div>
                   <!-- /Product Card -->
@@ -842,9 +935,8 @@
   </div>
 
   <!-- jQuery library -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Main JS -->
   <script src="assets/js/script.js"></script>

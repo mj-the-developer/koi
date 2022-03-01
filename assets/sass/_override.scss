@@ -2,7 +2,7 @@
     Bootstrap
 ------------------------------------------------------------------------------*/
 .container-fluid {
-  padding: 0;
+  padding: 117px 0 0;
   margin: 0;
 }
 
@@ -11,13 +11,18 @@
 }
 
 input.form-control {
-  border-color: #d0d0d0;
-  border-radius: 0;
+  border-color: $textColor;
+  border-radius: 4px;
   color: $textColor;
-  padding: 25px 15px;
+  height: 45px;
+  padding: 15px;
 }
 
 textarea.form-control {
+  border-color: $textColor;
+  border-radius: 4px;
+  color: $textColor;
+  height: 80px;
   padding: 15px;
 }
 
@@ -30,14 +35,21 @@ textarea.form-control,
 select.form-control {
   &:focus {
     box-shadow: none;
-    border: 1px solid $mainColor;
+    border: 2px solid $textColor;
   }
+}
+
+label {
+  font-size: 16px;
 }
 
 /*------------------------------------------------------------------------------
     Responsive
 ------------------------------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
+  .container-fluid {
+    padding: 70px 0 0;
+  }
   .container {
     max-width: 95% !important;
   }

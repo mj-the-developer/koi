@@ -1,0 +1,23 @@
+.main-breadcrumb {
+  align-items: center;
+  display: flex;
+  padding: 45px 0 30px;
+  .breadcrumb-item {
+    &:not(:first-child) {
+      padding-left: 10px;
+      &::before {
+        padding-right: 10px;
+        content: url('file://wsl.localhost/Ubuntu/home/mjthedeveloper/documents/projects/html/koi/assets/icons/angle-right-icon.svg') !important;
+      }
+    }
+    &.current-item {
+      color: $lightGray;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-breadcrumb {
+    padding: 15px 0;
+  }
+}

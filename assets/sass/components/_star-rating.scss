@@ -1,0 +1,22 @@
+.star-rating-wrapper {
+  align-items: center;
+  display: flex;
+  position: relative;
+  .star-rating-gold {
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.review-form-toggler {
+  background-color: #fff;
+  border: none;
+  color: $textColor;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: underline;
+}
