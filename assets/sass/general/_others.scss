@@ -19,6 +19,12 @@
   text-transform: uppercase;
 }
 
+.remove-item {
+  color: $lightGray;
+  font-size: 14px !important;
+  text-decoration: underline;
+}
+
 button.plain {
   background-color: transparent;
   border: none;

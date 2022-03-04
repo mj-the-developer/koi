@@ -11,35 +11,36 @@
       left: 70px;
       bottom: 30px;
     }
-    .newsletter-form {
-      position: relative;
-      height: 55px;
-      .form-control {
-        border: none;
-        color: #aaa;
-        font-size: 18px;
-        height: 100%;
-        &::placeholder {
-          color: #aaa;
-          opacity: 1;
-        }
-        &:-ms-input-placeholder {
-          color: #aaa;
-          opacity: 1;
-        }
-        &::-ms-input-placeholder {
-          color: #aaa;
-          opacity: 1;
-        }
-      }
-      .btn-dark {
-        border-radius: 0;
-        position: absolute;
-        right: 0;
-        top: 0;
-        height: 55px;
-      }
+  }
+}
+
+.subscribe-form {
+  position: relative;
+  height: 55px;
+  .form-control {
+    border: none;
+    color: #aaa;
+    font-size: 18px;
+    height: 100%;
+    &::placeholder {
+      color: #aaa;
+      opacity: 1;
     }
+    &:-ms-input-placeholder {
+      color: #aaa;
+      opacity: 1;
+    }
+    &::-ms-input-placeholder {
+      color: #aaa;
+      opacity: 1;
+    }
+  }
+  .btn-dark {
+    border-radius: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 55px;
   }
 }
 
@@ -65,9 +66,9 @@
       .no-spam-text {
         position: initial;
       }
-      .newsletter-form {
-        margin-bottom: 10px;
-      }
     }
+  }
+  .subscribe-form {
+    margin-bottom: 10px;
   }
 }

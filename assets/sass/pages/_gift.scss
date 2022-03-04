@@ -1,0 +1,95 @@
+.gift-container {
+  height: 100vh;
+  .row {
+    height: 100%;
+    .col-md-6 {
+      height: 100%;
+    }
+  }
+}
+
+.gift-container {
+  .gift-discount, .gift-subscribe {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .gift-discount {
+    background-color: $textColor;
+    color: #fff;
+    padding: 15px;
+    .discount-label {
+      background-color: #fff;
+      border-radius: 4px;
+      color: $textColor;
+      padding: 6px 15px;
+    }
+    .discount-percent {
+      font-size: 200px;
+      line-height: 250px;
+    }
+  }
+  .gift-subscribe {
+    .gift-subscribe-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      margin: 0 auto;
+      padding: 80px 15px;
+      width: 527px;
+      .logo {
+        path {
+          fill: $textColor;
+        }
+      }
+      .subscribe-form {
+        .form-control {
+          border: 1px solid $textColor;
+        }
+        .btn-dark {
+          border-radius: 0 4px 4px 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .gift-container {
+    .gift-subscribe {
+      .gift-subscribe-wrapper {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .gift-container {
+    .gift-discount {
+      .discount-percent {
+        font-size: 150px;
+        line-height: 150px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .gift-container {
+    .row {
+      flex-direction: column-reverse;
+      .col-md-6 {
+        height: 50vh;
+      }
+    }
+    .gift-subscribe {
+      .gift-subscribe-wrapper {
+        padding: 15px;
+      }
+    }
+  }
+}

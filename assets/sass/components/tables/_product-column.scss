@@ -1,0 +1,29 @@
+.product-col {
+  align-items: center;
+  display: flex;
+  .product-image {
+    height: 185px;
+    min-width: 185px;
+    width: 185px;
+  }
+  .product-info {
+    overflow: hidden;
+    padding-left: 15px;
+    .product-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 350px;
+      white-space: nowrap;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .product-col {
+    .product-image {
+      height: 90px;
+      min-width: 90px;
+      width: 90px;
+    }
+  }
+}
