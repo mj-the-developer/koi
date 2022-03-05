@@ -5,10 +5,34 @@
   }
   .journal-info {
     .journal-title {
+      font-size: 30px;
       line-height: 40px;
     }
-    .journal-date, .comment-count {
-      color: $gray;
+  }
+}
+
+.journal-meta {
+  .journal-meta-field {
+    color: $gray;
+    padding: 0 15px;
+    position: relative;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+    &:not(:last-child) {
+      &:after {
+        background-color: #bbb;
+        content: '';
+        height: 15px;
+        position: absolute;
+        right: -1px;
+        top: 50%;
+        width: 2px;
+        @include transform(translateY(-50%));
+      }
     }
   }
 }

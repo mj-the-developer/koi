@@ -2,6 +2,11 @@
   font-family: 'Outfit' !important;
 }
 
+.font-size-16 {
+  font-size: 16px !important;
+  line-height: 24px !important;
+}
+
 .font-size-18 {
   font-size: 18px !important;
   line-height: 27px !important;
@@ -21,7 +26,7 @@
     font-size: 19px;
     line-height: 30px;
   }
-  .font-size-18 {
+  .font-size-18, .font-size-16 {
     font-size: 14px;
     line-height: 21px;
   }

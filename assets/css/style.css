@@ -148,6 +148,10 @@ button {
 .font-outfit {
   font-family: 'Outfit' !important; }
 
+.font-size-16 {
+  font-size: 16px !important;
+  line-height: 24px !important; }
+
 .font-size-18 {
   font-size: 18px !important;
   line-height: 27px !important; }
@@ -164,7 +168,7 @@ button {
     font-size: 19px;
     line-height: 30px; }
 
-  .font-size-18 {
+  .font-size-18, .font-size-16 {
     font-size: 14px;
     line-height: 21px; } }
 .section-padding {
@@ -182,6 +186,9 @@ button {
 
 .upper-case {
   text-transform: uppercase; }
+
+.border-dark {
+  border-color: #000; }
 
 .remove-item {
   color: #8c8c8c;
@@ -617,6 +624,39 @@ button.plain {
     background-color: #666;
     border-color: #666; }
 
+.featured-article {
+  position: relative; }
+  .featured-article .article-image {
+    height: 720px; }
+  .featured-article .article-info {
+    bottom: 0;
+    color: #fff;
+    padding: 50px;
+    position: absolute;
+    left: 0;
+    width: 800px;
+    z-index: 2; }
+    .featured-article .article-info .article-title, .featured-article .article-info .article-excerpt, .featured-article .article-info .journal-meta-field {
+      color: #fff; }
+    .featured-article .article-info .journal-meta-field {
+      font-size: 18px;
+      font-weight: 300; }
+  .featured-article:after {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+    content: '';
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+
+@media screen and (max-width: 992px) {
+  .featured-article .article-info {
+    width: 100%; } }
+@media screen and (max-width: 768px) {
+  .featured-article .article-info {
+    padding: 15px; } }
 .featured-collection-card {
   text-align: center; }
   .featured-collection-card .featured-collection-image {
@@ -670,9 +710,30 @@ button.plain {
   height: 470px;
   margin-bottom: 25px; }
 .journal-card .journal-info .journal-title {
+  font-size: 30px;
   line-height: 40px; }
-.journal-card .journal-info .journal-date, .journal-card .journal-info .comment-count {
-  color: #666; }
+
+.journal-meta .journal-meta-field {
+  color: #666;
+  padding: 0 15px;
+  position: relative; }
+  .journal-meta .journal-meta-field:first-child {
+    padding-left: 0; }
+  .journal-meta .journal-meta-field:last-child {
+    padding-right: 0; }
+  .journal-meta .journal-meta-field:not(:last-child):after {
+    background-color: #bbb;
+    content: '';
+    height: 15px;
+    position: absolute;
+    right: -1px;
+    top: 50%;
+    width: 2px;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); }
 
 .newsletter .newsletter-image {
   height: 630px; }
@@ -885,21 +946,6 @@ button.plain {
     width: 100%; }
 .featured-product .product-info .product-price {
   font-size: 24px; }
-.featured-product .product-info .variant-label {
-  border: 1px solid #d0d0d0;
-  border-radius: 4px;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  line-height: 27px;
-  margin-bottom: 3px;
-  padding: 5px 15px;
-  transition: all 0.4s;
-  -webkit-transition: all 0.4s; }
-  .featured-product .product-info .variant-label.selected {
-    background-color: #000;
-    color: #fff;
-    border-color: #000; }
 .featured-product .product-info .purchase-info {
   font-size: 14px;
   line-height: 24px;
@@ -1020,6 +1066,22 @@ button.plain {
 @media screen and (max-width: 576px) {
   .instagram-feed .instagram-info .instagram-id {
     font-size: 46px; } }
+.main-label {
+  border: 1px solid #d0d0d0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 27px;
+  margin-bottom: 3px;
+  padding: 5px 15px;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s; }
+  .main-label.selected {
+    background-color: #000;
+    color: #fff;
+    border-color: #000; }
+
 .star-rating-wrapper {
   align-items: center;
   display: flex;
