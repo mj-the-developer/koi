@@ -15,6 +15,10 @@
   width: 720px;
 }
 
+.with-underline {
+  text-decoration: underline !important;
+}
+
 .upper-case {
   text-transform: uppercase;
 }
@@ -34,6 +38,20 @@ button.plain {
   border: none;
 }
 
+.article-content {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Outfit";
+  }
+  img {
+    margin-bottom: 15px;
+  }
+}
+
 .qty-input-wrapper {
   display: inline-block;
   height: 35px;
@@ -47,7 +65,8 @@ button.plain {
     padding: 0 !important;
     text-align: center;
   }
-  .increase, .decrease {
+  .increase,
+  .decrease {
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
@@ -67,13 +86,13 @@ button.plain {
   position: relative;
   &::after {
     background-color: $textColor;
-    content: '';
+    content: "";
     height: 60%;
     position: absolute;
     right: 50%;
     top: 50%;
     width: 2px;
-    @include transform(translate(50%, -50%))
+    @include transform(translate(50%, -50%));
   }
 }
 

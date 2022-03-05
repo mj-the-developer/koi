@@ -29,6 +29,14 @@
     width: 100%;
     z-index: 1;
   }
+  &.without-article-info {
+    .article-info {
+      display: none;
+    }
+    &:after {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 992px) {

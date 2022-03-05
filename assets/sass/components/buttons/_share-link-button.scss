@@ -1,0 +1,17 @@
+.share-link-button-wrapper {
+  position: relative;
+  .share-link-popup {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.3);
+    display: none;
+    left: 0;
+    padding: 10px;
+    position: absolute;
+    top: 100%;
+    width: max-content;
+    .copy-icon {
+      width: 20px;
+    }
+  }
+}
