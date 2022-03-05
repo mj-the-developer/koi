@@ -207,9 +207,15 @@ button.plain {
 .article-content h3,
 .article-content h4,
 .article-content h5,
-.article-content h6 {
-  font-family: "Outfit"; }
-.article-content img {
+.article-content h6, .page-content h1,
+.page-content h2,
+.page-content h3,
+.page-content h4,
+.page-content h5,
+.page-content h6 {
+  font-family: "Outfit";
+  margin-bottom: 20px; }
+.article-content img, .page-content img {
   margin-bottom: 15px; }
 
 .qty-input-wrapper {
@@ -533,6 +539,23 @@ button.plain {
 /*------------------------------------------------------------------------------
     Responsive
 ------------------------------------------------------------------------------*/
+.page-404-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh; }
+  .page-404-content .page-404-title {
+    font-size: 380px;
+    line-height: 500px; }
+
+@media screen and (max-width: 768px) {
+  .page-404-content .page-404-title {
+    font-size: 250px;
+    line-height: 350px; } }
+@media screen and (max-width: 576px) {
+  .page-404-content .page-404-title {
+    font-size: 150px;
+    line-height: 200px; } }
 .gift-container {
   height: 100vh; }
   .gift-container .row {

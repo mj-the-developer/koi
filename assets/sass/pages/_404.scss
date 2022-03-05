@@ -1,0 +1,28 @@
+.page-404-content {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  .page-404-title {
+    font-size: 380px;
+    line-height: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-404-content {
+    .page-404-title {
+      font-size: 250px;
+      line-height: 350px;
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .page-404-content {
+    .page-404-title {
+      font-size: 150px;
+      line-height: 200px;
+    }
+  }
+}

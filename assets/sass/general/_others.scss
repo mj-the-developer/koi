@@ -38,7 +38,7 @@ button.plain {
   border: none;
 }
 
-.article-content {
+.article-content, .page-content {
   h1,
   h2,
   h3,
@@ -46,6 +46,7 @@ button.plain {
   h5,
   h6 {
     font-family: "Outfit";
+    margin-bottom: 20px;
   }
   img {
     margin-bottom: 15px;
