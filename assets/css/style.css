@@ -791,6 +791,12 @@ button.plain {
     -o-transform: translateY(-50%);
     -ms-transform: translateY(-50%); }
 
+.list-collection-card {
+  text-align: center; }
+  .list-collection-card .list-collection-image {
+    height: 420px;
+    margin-bottom: 15px; }
+
 .newsletter .newsletter-image {
   height: 630px; }
 .newsletter .newsletter-card {
