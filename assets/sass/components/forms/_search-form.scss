@@ -1,0 +1,26 @@
+.search-form {
+  .form-group {
+    position: relative;
+    .search-icon {
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      @include transform(translateY(-50%));
+    }
+    .form-control {
+      padding-left: 40px;
+    }
+  }
+  &.centered {
+    margin: 0 auto;
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .search-form {
+    &.centered {
+      width: 100%;
+    }
+  }
+}

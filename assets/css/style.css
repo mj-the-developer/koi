@@ -988,6 +988,26 @@ button.plain {
         margin-right: 3px;
         min-width: 70px;
         width: 70px; } }
+.search-form .form-group {
+  position: relative; }
+  .search-form .form-group .search-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%); }
+  .search-form .form-group .form-control {
+    padding-left: 40px; }
+.search-form.centered {
+  margin: 0 auto;
+  width: 450px; }
+
+@media screen and (max-width: 576px) {
+  .search-form.centered {
+    width: 100%; } }
 .collection-header {
   height: 400px;
   position: relative; }
