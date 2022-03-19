@@ -105,7 +105,7 @@
               <span class="nav-link">CAD$</span>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Search</a>
+              <a class="nav-link open-search-overlay" href="javascript:void(0)">Search</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="account.html">Account</a>
@@ -208,6 +208,97 @@
           </div>
         </div>
         <!-- /Cart Sidebar -->
+        <!-- Search Overlay -->
+        <div class="search-overlay">
+          <div class="container">
+            <button class="plain close-search-overlay">
+              <img src="assets/icons/close.svg" alt="Close Icon">
+            </button>
+            
+            <form action="#" class="search-form mb-5">
+              <div class="form-group">
+                <img src="assets/icons/search.svg" alt="Search Icon" class="search-icon">
+                <input type="text" class="form-control">
+              </div>
+            </form>
+
+            <div class="row">
+              <!-- Product Card -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                <div class="product-card">
+                  <a href="#" class="product-url">
+                    <div class="product-image"
+                      style="background: url('assets/images/green-top.jpg') no-repeat center;background-size:cover;"></div>
+                  </a>
+                  <a href="#" class="product-url">
+                    <h6 class="product-title">Green Tank Top</h6>
+                  </a>
+                  <p class="product-price">&dollar;49.75</p>
+                </div>
+              </div>
+              <!-- /Product Card -->
+              <!-- Product Card -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                <div class="product-card">
+                  <a href="#" class="product-url">
+                    <div class="product-image"
+                      style="background: url('assets/images/pants.jpg') no-repeat center;background-size:cover;">
+                      <span class="product-label">New</span>
+                    </div>
+                  </a>
+                  <a href="#" class="product-url">
+                    <h6 class="product-title">Light Grey Slouchy Pants</h6>
+                  </a>
+                  <p class="product-price">&dollar;167.50</p>
+                </div>
+              </div>
+              <!-- /Product Card -->
+              <!-- Product Card -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                <div class="product-card">
+                  <a href="#" class="product-url">
+                    <div class="product-image"
+                      style="background: url('assets/images/brown-belt.jpg') no-repeat center;background-size:cover;"></div>
+                  </a>
+                  <a href="#" class="product-url">
+                    <h6 class="product-title">Brown Belt</h6>
+                  </a>
+                  <p class="product-price">&dollar;61.00</p>
+                </div>
+              </div>
+              <!-- /Product Card -->
+              <!-- Product Card -->
+              <div class="col-lg-3 col-md-4 col-sm-6 mb-5">
+                <div class="product-card">
+                  <a href="#" class="product-url">
+                    <div class="product-image"
+                      style="background: url('assets/images/eyeglass.jpg') no-repeat center;background-size:cover;">
+                      <span class="product-label">Sale</span>
+                    </div>
+                  </a>
+                  <a href="#" class="product-url">
+                    <h6 class="product-title">Black Eyeglass</h6>
+                  </a>
+                  <p class="product-price">
+                    &dollar;80.90
+                    <del class="text-light-gray pl-2">&dollar;110.90</del>
+                  </p>
+                </div>
+              </div>
+              <!-- /Product Card -->
+            </div>
+
+            <div class="text-center">
+              <a href="#" class="text-dark font-size-18">
+                View All
+                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1 1L6 5.5L1 10" stroke="black" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /Search Overlay -->
         <div id="overlay-modal"></div>
       </nav>
     </div>

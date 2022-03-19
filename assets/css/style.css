@@ -1309,6 +1309,30 @@ button.plain {
     display: flex;
     justify-content: space-between; }
 
+.search-overlay {
+  background-color: #fff;
+  opacity: 0;
+  position: fixed;
+  padding: 15px 0 30px;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 10;
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s; }
+  .search-overlay.active {
+    opacity: 1;
+    visibility: visible; }
+  .search-overlay .search-form {
+    padding-right: 50px; }
+  .search-overlay .container {
+    position: relative; }
+    .search-overlay .container .close-search-overlay {
+      position: absolute;
+      right: 0;
+      top: 0; }
+
 .cart-sidebar-item {
   overflow: hidden;
   padding: 10px 0; }
