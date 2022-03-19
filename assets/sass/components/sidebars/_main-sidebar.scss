@@ -1,0 +1,27 @@
+.sidebar {
+  background-color: #fff;
+  height: 100vh;
+  padding: 20px;
+  position: fixed;
+  right: -550px;
+  top: 0;
+  width: 375px;
+  z-index: 999;
+  @include transition(all 0.4s);
+  &.active {
+    right: 0;
+  }
+  .sidebar-footer {
+    bottom: 0;
+    padding: 20px;
+    position: absolute;
+    right: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    width: 100%;
+  }
+}

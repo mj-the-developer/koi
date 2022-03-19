@@ -8,7 +8,12 @@
   margin-bottom: 3px;
   padding: 5px 15px;
   @include transition(all 0.4s);
-  &.selected {
+  &.thin-label {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 5px 10px;
+  }
+  &.selected, &:hover {
     background-color: $textColor;
     color: #fff;
     border-color: $textColor;

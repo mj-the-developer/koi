@@ -1,0 +1,8 @@
+.range-slider {
+  @include range-slider(100%, 70px, 35px, $textColor, $textColor, none);
+  .rangeValues {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

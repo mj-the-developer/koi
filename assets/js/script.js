@@ -24,19 +24,24 @@ $(document).ready(function () {
   // navbar and cart sidebar close
   $('#overlay-modal').click(function () {
     $('#collapsibleNavbar').removeClass('active');
-    $('.cart-sidebar').removeClass('active');
+    $('.sidebar').removeClass('active');
     $(this).removeClass('active');
   });
 
   // cart sidebar close
-  $('#close-cart-sidebar').click(function () {
-    $('.cart-sidebar').removeClass('active');
+  $('.close-sidebar').click(function () {
+    $('.sidebar').removeClass('active');
     $('#overlay-modal').removeClass('active');
   });
 
   // cart sidebar open
   $('.open-cart-sidebar').click(function () {
     $('.cart-sidebar').addClass('active');
+    $('#overlay-modal').addClass('active');
+  });
+  // Variant filter sidebar open
+  $('#variant-filters-toggler').click(function () {
+    $('.variant-filters-sidebar').addClass('active');
     $('#overlay-modal').addClass('active');
   });
 

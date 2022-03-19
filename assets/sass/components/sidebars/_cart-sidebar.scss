@@ -1,0 +1,25 @@
+.cart-sidebar-item {
+  overflow: hidden;
+  padding: 10px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid #dee2e6;
+  }
+  .item-image {
+    height: 85px;
+    min-width: 85px;
+    width: 85px;
+  }
+  .item-info {
+    padding-left: 10px;
+    width: 100%;
+    .item-title {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      width: 90%;
+    }
+    .qty-input-wrapper {
+      height: 26px;
+    }
+  }
+}
