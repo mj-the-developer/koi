@@ -8,26 +8,34 @@
   color: #fff;
 }
 
+.btn-cancel {
+  border: 1px solid $gray;
+  background-color: $gray !important;
+  color: #fff;
+}
+
 .btn-dark, .btn-light {
   border: 1px solid $textColor;
+}
+
+.btn-dark, .btn-light, .btn-cancel {
   border-radius: 4px;
   font-size: 18px;
   padding: 15px 50px;
   &.btn-thin {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding: 10px 15px !important;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .btn-dark, .btn-light {
+  .btn-dark, .btn-light, .btn-cancel {
     font-size: 16px;
     padding: 10px 35px;
   }
 }
 
 @media screen and (max-width: 576px) {
-  .btn-dark, .btn-light {
+  .btn-dark, .btn-light, .btn-cancel {
     font-size: 14px;
     padding: 10px 20px;
   }

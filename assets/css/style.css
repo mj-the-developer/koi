@@ -554,10 +554,13 @@ button.plain {
         -moz-transform: translateY(-50%);
         -o-transform: translateY(-50%);
         -ms-transform: translateY(-50%); }
-  .password-container .password-subscribe-form {
+  .password-container .password-subscribe-form, .password-container .activate-account-form-wrapper {
     position: relative;
+    width: 527px;
     z-index: 2; }
-    .password-container .password-subscribe-form .subscribe-form .btn-dark {
+    .password-container .password-subscribe-form .form-control, .password-container .activate-account-form-wrapper .form-control {
+      border: 1px solid #fff; }
+    .password-container .password-subscribe-form .subscribe-form .btn-dark, .password-container .activate-account-form-wrapper .subscribe-form .btn-dark {
       border-radius: 0 4px 4px 0; }
   .password-container .password-form-wrapper {
     display: none;
@@ -576,7 +579,8 @@ button.plain {
     -ms-transform: translateX(-50%); }
   .password-container.password-mode #password-page-mode-toggler,
   .password-container.password-mode .password-page-footer,
-  .password-container.password-mode .password-subscribe-form {
+  .password-container.password-mode .password-subscribe-form,
+  .password-container.password-mode .activate-account-form-wrapper {
     display: none; }
   .password-container.password-mode .password-form-wrapper {
     display: block; }
@@ -619,21 +623,27 @@ button.plain {
   background-color: #000 !important;
   color: #fff; }
 
+.btn-cancel {
+  border: 1px solid #666;
+  background-color: #666 !important;
+  color: #fff; }
+
 .btn-dark, .btn-light {
-  border: 1px solid #000;
+  border: 1px solid #000; }
+
+.btn-dark, .btn-light, .btn-cancel {
   border-radius: 4px;
   font-size: 18px;
   padding: 15px 50px; }
-  .btn-dark.btn-thin, .btn-light.btn-thin {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important; }
+  .btn-dark.btn-thin, .btn-light.btn-thin, .btn-cancel.btn-thin {
+    padding: 10px 15px !important; }
 
 @media screen and (max-width: 1200px) {
-  .btn-dark, .btn-light {
+  .btn-dark, .btn-light, .btn-cancel {
     font-size: 16px;
     padding: 10px 35px; } }
 @media screen and (max-width: 576px) {
-  .btn-dark, .btn-light {
+  .btn-dark, .btn-light, .btn-cancel {
     font-size: 14px;
     padding: 10px 20px; } }
 .quick-shop-button {
