@@ -180,6 +180,12 @@ button {
 .section-padding-lg {
   padding: 120px 0; }
 
+.full-height-page {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  height: 100vh; }
+
 .section-subtitle {
   margin: 0 auto;
   width: 720px; }
@@ -428,21 +434,16 @@ button.plain {
 /*------------------------------------------------------------------------------
     Responsive
 ------------------------------------------------------------------------------*/
-.page-404-content {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  height: 100vh; }
-  .page-404-content .page-404-title {
-    font-size: 380px;
-    line-height: 500px; }
+.page-404-title {
+  font-size: 380px;
+  line-height: 500px; }
 
 @media screen and (max-width: 768px) {
-  .page-404-content .page-404-title {
+  .page-404-title {
     font-size: 250px;
     line-height: 350px; } }
 @media screen and (max-width: 576px) {
-  .page-404-content .page-404-title {
+  .page-404-title {
     font-size: 150px;
     line-height: 200px; } }
 .gift-container {
@@ -1095,6 +1096,13 @@ button.plain {
         margin-right: 3px;
         min-width: 70px;
         width: 70px; } }
+.auth-form {
+  margin: 0 auto;
+  width: 440px; }
+
+@media screen and (max-width: 576px) {
+  .auth-form {
+    width: 100%; } }
 .search-form .form-group {
   position: relative; }
   .search-form .form-group .search-icon {

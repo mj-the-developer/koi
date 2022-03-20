@@ -107,8 +107,11 @@
             <li class="nav-item">
               <a class="nav-link open-search-overlay" href="javascript:void(0)">Search</a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <a class="nav-link" href="account.html">Account</a>
+            </li> -->
+            <li class="nav-item">
+              <a class="nav-link open-login-sidebar" href="javascript:void(0)">Login</a>
             </li>
             <li class="nav-item">
               <a class="nav-link open-cart-sidebar" href="javascript:void(0)">Cart(0)</a>
@@ -208,6 +211,45 @@
           </div>
         </div>
         <!-- /Cart Sidebar -->
+        <!-- Login Sidebar -->
+        <div class="sidebar login-sidebar">
+          <div class="login-sidebar-header pb-3 border-bottom">
+            <div class="row align-items-center">
+              <div class="col-6">
+                <h4>LOGIN</h4>
+              </div>
+              <div class="col-6 text-right">
+                <button class="plain close-sidebar">
+                  <img src="assets/icons/close.svg" alt="Close Icon">
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="pt-3">
+            <form action="#" class="login-form">
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control">
+              </div>
+              <div class="form-group">
+                <div class="d-flex align-items-center justify-content-between">
+                  <label for="password">Password:</label>
+                  <a href="reset-password.html" class="text-gray with-underline">Forgot Your Password?</a>
+                </div>
+                <input type="password" id="password" name="password" class="form-control">
+              </div>
+              <div class="mt-4 mt-md-5">
+                <div class="d-flex align-items-center justify-content-between">
+                  <button class="btn-dark btn-thin">Login</button>
+                  <div class="text-right">
+                    <a href="register.html" class="font-size-18 with-underline">Create Account</a>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /Login Sidebar -->
         <!-- Search Overlay -->
         <div class="search-overlay">
           <div class="container">

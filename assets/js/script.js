@@ -28,12 +28,12 @@ $(document).ready(function () {
     $(this).removeClass('active');
   });
 
-  // cart sidebar close
+  // sidebar close
   $('.close-sidebar').click(function () {
     $('.sidebar').removeClass('active');
     $('#overlay-modal').removeClass('active');
   });
-  // cart sidebar close
+  // search overlay close
   $('.close-search-overlay').click(function () {
     $('.search-overlay').removeClass('active');
   });
@@ -41,6 +41,11 @@ $(document).ready(function () {
   // cart sidebar open
   $('.open-cart-sidebar').click(function () {
     $('.cart-sidebar').addClass('active');
+    $('#overlay-modal').addClass('active');
+  });
+  // login sidebar open
+  $('.open-login-sidebar').click(function () {
+    $('.login-sidebar').addClass('active');
     $('#overlay-modal').addClass('active');
   });
   // variant filter sidebar open
