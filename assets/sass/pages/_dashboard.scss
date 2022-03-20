@@ -1,0 +1,82 @@
+.dashboard-container {
+  .dashboard-links {
+    a {
+      &:not(:last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  .dashboard-content {
+    border: 1px solid #000;
+    border-radius: 4px;
+    padding: 30px;
+    .address-form {
+      display: none;
+    }
+    &.add-address-mode {
+      .address-form {
+        display: block;
+      }
+      .address-form-toggler-wrapper, .addresses {
+        display: none;
+      }
+    }
+  }
+}
+
+.address-row {
+  padding: 30px 0;
+  &:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+  .default-label {
+    border: 1px solid $gray;
+    border-radius: 4px;
+    color: $gray;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 2px 10px;
+  }
+  .address-actions-wrapper {
+    position: relative;
+    .address-actions-dropdown {
+      background-color: #fff;
+      border-radius: 4px;
+      bottom: 100%;
+      box-shadow: 0px 4px 15px rgba(106, 106, 106, 0.3);
+      opacity: 0;
+      padding: 15px;
+      position: absolute;
+      right: 0;
+      visibility: hidden;
+      width: max-content;
+      @include transition(all 0.4s);
+      &.active {
+        opacity: 1;
+        visibility: visible;
+      }
+      .address-action-item {
+        button {
+          @include transition(all 0.4s);
+        }
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+        &:hover {
+          button {
+            color: $gray;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .dashboard-container {
+    .dashboard-content {
+      padding: 15px;
+    }
+  }
+}

@@ -17,6 +17,18 @@
   height: 100vh;
 }
 
+.account-avatar {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 36px;
+  justify-content: center;
+  min-width: 60px;
+  @include circle(60px);
+}
+
 .section-subtitle {
   margin: 0 auto;
   width: 720px;
