@@ -23,11 +23,11 @@
 
 @media screen and (max-width: 768px) {
   .font-size-24 {
-    font-size: 19px;
-    line-height: 30px;
+    font-size: 19px !important;
+    line-height: 30px !important;
   }
   .font-size-18, .font-size-16 {
-    font-size: 14px;
-    line-height: 21px;
+    font-size: 14px !important;
+    line-height: 21px !important;
   }
 }

@@ -165,12 +165,12 @@ button {
 
 @media screen and (max-width: 768px) {
   .font-size-24 {
-    font-size: 19px;
-    line-height: 30px; }
+    font-size: 19px !important;
+    line-height: 30px !important; }
 
   .font-size-18, .font-size-16 {
-    font-size: 14px;
-    line-height: 21px; } }
+    font-size: 14px !important;
+    line-height: 21px !important; } }
 .section-padding {
   padding: 70px 0; }
 
@@ -499,6 +499,103 @@ button.plain {
       height: 50vh; }
   .gift-container .gift-subscribe .gift-subscribe-wrapper {
     padding: 15px; } }
+.password-container {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  padding: 15px;
+  position: relative; }
+  .password-container::after {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
+  .password-container .shop-logo,
+  .password-container #password-page-mode-toggler,
+  .password-container .password-page-footer {
+    position: absolute;
+    z-index: 2; }
+  .password-container .shop-logo {
+    left: 120px;
+    max-width: 125px;
+    top: 45px; }
+  .password-container #password-page-mode-toggler {
+    right: 120px;
+    top: 45px; }
+  .password-container .password-page-footer {
+    bottom: 50px;
+    left: 50%;
+    text-align: center;
+    width: 100%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); }
+    .password-container .password-page-footer .password-page-footer-link {
+      color: #fff;
+      padding: 0 15px;
+      position: relative; }
+      .password-container .password-page-footer .password-page-footer-link:not(:last-child)::after {
+        background-color: #fff;
+        content: '';
+        height: 20px;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: 1px;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        -ms-transform: translateY(-50%); }
+  .password-container .password-subscribe-form {
+    position: relative;
+    z-index: 2; }
+    .password-container .password-subscribe-form .subscribe-form .btn-dark {
+      border-radius: 0 4px 4px 0; }
+  .password-container .password-form-wrapper {
+    display: none;
+    margin: 0 auto;
+    position: relative;
+    width: 527px;
+    z-index: 2; }
+    .password-container .password-form-wrapper .password-form .btn-dark {
+      border-radius: 0 4px 4px 0; }
+  .password-container.password-mode .shop-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -ms-transform: translateX(-50%); }
+  .password-container.password-mode #password-page-mode-toggler,
+  .password-container.password-mode .password-page-footer,
+  .password-container.password-mode .password-subscribe-form {
+    display: none; }
+  .password-container.password-mode .password-form-wrapper {
+    display: block; }
+
+@media screen and (max-width: 992px) {
+  .password-container .shop-logo {
+    left: 60px; }
+  .password-container #password-page-mode-toggler {
+    right: 60px; } }
+@media screen and (max-width: 768px) {
+  .password-container .shop-logo {
+    left: 15px;
+    max-width: 100px;
+    top: 15px; }
+  .password-container #password-page-mode-toggler {
+    right: 15px;
+    top: 15px; }
+  .password-container .password-page-footer {
+    bottom: 15px; } }
 .main-breadcrumb {
   align-items: center;
   display: flex;
@@ -697,24 +794,24 @@ button.plain {
     left: 70px;
     bottom: 30px; }
 
-.subscribe-form {
+.subscribe-form, .password-form {
   position: relative;
   height: 55px; }
-  .subscribe-form .form-control {
+  .subscribe-form .form-control, .password-form .form-control {
     border: none;
     color: #aaa;
     font-size: 18px;
     height: 100%; }
-    .subscribe-form .form-control::placeholder {
+    .subscribe-form .form-control::placeholder, .password-form .form-control::placeholder {
       color: #aaa;
       opacity: 1; }
-    .subscribe-form .form-control:-ms-input-placeholder {
+    .subscribe-form .form-control:-ms-input-placeholder, .password-form .form-control:-ms-input-placeholder {
       color: #aaa;
       opacity: 1; }
-    .subscribe-form .form-control::-ms-input-placeholder {
+    .subscribe-form .form-control::-ms-input-placeholder, .password-form .form-control::-ms-input-placeholder {
       color: #aaa;
       opacity: 1; }
-  .subscribe-form .btn-dark {
+  .subscribe-form .btn-dark, .password-form .btn-dark {
     border-radius: 0;
     position: absolute;
     right: 0;
